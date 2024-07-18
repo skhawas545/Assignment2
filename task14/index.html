@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+    <style>
+        button{
+            background-color: rgb(255, 25, 0);
+        }
+        body {
+            background-color: rgb(12, 10, 10);
+        }
+        th, td, table {
+            border-style: solid;
+            border-collapse: collapse;
+        }
+        button {
+            margin-top: 10px;
+        }
+        input{
+            background-color: #844040;
+        }
+        textarea{
+            background-color: #844040;
+        }
+        select{
+            background-color: #844040;
+        }
+        table {
+            margin: auto;
+            background-color: #844040;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            backdrop-filter:blur(180px);
+        }
+    </style>
+</head>
+<body>
+    <form style="text-align: center;" onsubmit="return validateForm()">
+        <h1 style="color:blueviolet">Registration Form</h1>
+        <table>
+            <tr>
+                <td>First Name</td>
+                <td><input style="width:98.3%;" type="text" id="username" required></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input style="width:98.3%;" type="text" id="Lastname" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input style="width:98.3%;" type="email" id="Email" required></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input style="width:98.3%;" type="password" id="Password" required></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input style="width:98.3%;" type="password" id="Re-enter-Password" required></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Gender</td>
+                <td><input type="radio" name="gender" value="male" required> Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="gender" value="female" required> Female</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input style="width:98.3%;" type="number" id="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input style="width:98.3%;" type="tel" id="number"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea cols="40" rows="5" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input style="width:98.3%;" type="text" id="State"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select id="country" style="width:98.3%;">
+                        <option value="">Choose your country</option>
+                        <option value="usa">USA</option>
+                        <option value="india">INDIA</option>
+                        <option value="italy">ITALY</option>
+                        <option value="israel">ISRAEL</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Language Known</td>
+                <td>
+                    <input type="checkbox" id="English">
+                    <label for="English">English</label>
+                    <input type="checkbox" id="Kannada">
+                    <label for="Kannada">Kannada</label>
+                    <input type="checkbox" id="Hindi">
+                    <label for="Hindi">Hindi</label>
+                    <input type="checkbox" id="Telugu">
+                    <label for="Telugu">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="declaration" required>
+                    Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:end;">
+                    Log in to <a href="https://ethnus.com/" target="_blank">Ethnus</a> Website
+                </td>
+            </tr>
+        </table>
+        <div style="text-align: center;">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+    <script>
+        function validateForm() {
+            var password = document.getElementById('Password').value;
+            var rePassword = document.getElementById('Re-enter-Password').value;
+
+            if (password !== rePassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+
+            var age = document.getElementById('age').value;
+            if (age && (isNaN(age) || age <= 0)) {
+                alert("Please enter a valid age.");
+                return false;
+            }
+
+            var phoneNumber = document.getElementById('number').value;
+            if (phoneNumber && (isNaN(phoneNumber) || phoneNumber.length < 10)) {
+                alert("Please enter a valid phone number.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

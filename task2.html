@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSTRUCTORS INC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+        }
+        .builder-main-box{
+            background-color: var(--primary-color);
+        }
+        .builder-main-heading{
+            color: white;
+        }
+        #home{
+            color: var(--primary-color);
+        }
+        .image{
+            height: 500px;
+        }
+        .caption2{
+          margin-bottom: 160px;
+        }
+        .builder-para{
+            font-size: 22px;
+            color: white;
+            font-weight: bold;
+        }
+        .builder-heading{
+            font-weight: bold;
+            font-size: 32px;
+        }
+        .heading{
+            font-size: 18px;
+            color: white;
+            font-weight: 300;
+        }
+        .para{
+            font-size: 16px;
+            color: white;
+            font-weight: 200;
+        }
+        .card{
+          background-color: var(--secondary-color);
+          color: var(--primary-color);
+          height: 40vh;
+          width:100%;
+        }
+        .card-title{
+          font-size: 30px;
+        }
+        .card-para{
+          font-size: 18px;
+        }
+        .card1{
+          background-color: var(--primary-color);
+          color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="builder-main-box mb-0 ">
+   <div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+            <div class="d-flex">
+                <h1 class="builder-main-heading pl-5">Constructors Inc</h1>
+            <div style="padding-left: 100px;padding-top: 16px;" class="d-none d-lg-block">
+                <i class="fas fa-clock fa-2x"></i>
+                 <div style="position: absolute;top: 0px;" class=" d-none d-lg-block pl-2"> 
+                    <h1 class="heading mx-3 mb-0 p-1">Business Hours</h1>
+                    <p class="para mx-4 "> Mon-Sat 7:00-18:00</p>
+                 </div>
+             </div>
+             <div class="mx-5">
+                <div style="padding-left: 100px;padding-top: 5px;" class="d-none d-lg-block">
+                    <i class="fas fa-phone-alt fa-2x"></i>
+                     <div style="position: absolute;top: 0px;" class=" d-none d-lg-block pl-2"> 
+                        <h1 class="heading mx-4 mb-0 p-1">Contact Us</h1>
+                        <p class="para mx-4 ">+123 456 7890</p>
+                    </div>
+               </div>
+            </div>
+            <div class="mx-4">
+                <div style="padding-left: 100px;padding-top: 5px;" class="d-none d-lg-block">
+                    <i class="fas fa-envelope fa-2x"></i>
+                     <div style="position: absolute;top: 0px;" class=" d-none d-lg-block pl-2"> 
+                        <h1 class="heading mx-4 mb-0 p-1">Email Us</h1>
+                        <p class="para mx-4 ">info@constructors.com</p>
+                    </div>
+               </div>
+            </div>
+        </div>
+    </div>
+   </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark mx-3" >
+            <div class="container">
+              <a class="navbar-brand text-white" href="#"> NAVIGATION
+              </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                 <div class="navbar-nav mr-auto" >
+                   <a class="nav-link active "  id="home" href="#">HOME <span class="sr-only">(current)</span></a>
+                   <a class="nav-link  text-white" href="#">ABOUT US</a>
+                   <a class="nav-link text-white" href="#">SERVICES</a>
+                   <a class="nav-link  text-white" href="#">OUR TEAM</a>
+                   <a class="nav-link text-white " href="#">PORTFOLIO</a>
+                   <a class="nav-link  text-white " href="#">RESOURCES
+                    <i class="fas fa-caret-down"></i>
+                   </a>
+                   <a class="nav-link text-white " href="#">CONTACT US</a>
+                  </div>
+                  <button class="btn btn-outline-light text-white shadow-lg"><b>REQUEST A QUOTE</b></button>      
+               </div>
+              </div>
+           </nav> 
+        </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://res.cloudinary.com/dddjuplfk/image/upload/v1719392017/carousel-1_p3rwfl.jpg" style="filter: brightness(40%);"  class="d-block w-100 image" alt="...">
+            <div class="carousel-caption caption2">
+                <p class="builder-para">Expert Construction Solutions</p>
+                <h1 class="p-2 bulder-heading">Building Your Vision, Our Mission</h1>
+                <button class="btn btn-primary text-white shadow-lg"><b>GET STARTED</b></button>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-12 col-md-3 w-100 " style="background-color: var(--secondary-color);">
+          <div class="card p-4 d-flex flex-row ">
+            <i class="fas fa-hard-hat fa-3x mx-4 mt-3"></i>
+          <div class="m-3">
+            <h1 class="card-title">Skilled Team</h1>
+            <p class="card-para">Our experienced professionals ensure top-quality results for every project.</p>
+          </div>
+        </div>
+        </div>
+
+        <div class="col-12 col-md-3 w-100" style="background-color: var(--primary-color);">
+          <div class="card card1 p-4 d-flex flex-row" >
+            <i class="fas fa-tools fa-3x mx-4 mt-3"></i>
+          <div class="m-3 ">
+            <h1 class="card-title">Modern Equipment</h1>
+            <p class="card-para">We use cutting-edge technology to deliver efficient and precise construction.</p>
+          </div>
+        </div>
+        </div>
+        <div class="col-12 col-md-3 w-100" style="background-color: var(--secondary-color);">
+          <div class="card p-4 d-flex flex-row">
+            <i class="fas fa-headset fa-3x mt-4"></i>
+          <div class="m-3">
+            <h1 class="card-title">24/7 Support</h1>
+            <p class="card-para">Our dedicated team is always available to address your concerns and queries.</p>
+          </div>
+        </div>
+      </div>  
+      <div class="col-12 col-md-3 w-100" style="background-color: var(--primary-color);">
+          <div class="card card1 p-4 d-flex flex-row">
+            <i class="fas fa-certificate fa-3x mt-4"></i>
+          <div class="m-3">
+            <h1 class="card-title">Certified Quality</h1>
+            <p class="card-para">We adhere to the highest industry standards to ensure exceptional results.</p>
+          </div>
+        </div>
+      </div>     
+      </div> 
+</body>
+</html>
